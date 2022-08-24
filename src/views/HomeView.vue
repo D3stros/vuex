@@ -3,7 +3,7 @@
     <img alt="Vue logo" src="../assets/logo.png">
     <div class="counter">{{counter}}</div>
     <div class="buttons">
-      <button>-</button>
+      <button @click="decreaseCounter">-</button>
       <button @click="increaseCounter">+</button>
     </div>
   </div>
@@ -21,6 +21,9 @@ export default {
   methods: {
     increaseCounter() {
       this.counter++
+    },
+    decreaseCounter() {
+      this.counter--
     }
   }
 }
